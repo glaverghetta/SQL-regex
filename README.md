@@ -1,7 +1,7 @@
-# Regular Expressions from "Large Scale Analysis of GitHub and CVEs to Determine Prevalence of SQL Concatenations"
+# Regular Expressions from "Measuring the Absolute and Relative Prevalence of SQL Concatenations and SQL-Identifier Injections"
 
 This repository contains the regular expressions used to identify SQL concatenation in Java, PHP, and C# projects posted on GitHub. This file cannot be run individually but instead can be used as part of
-a larger project to build the complex regular expressions needed for our analysis.
+our crawler program (available here: https://github.com/glaverghetta/SQLcrawler) to build the complex regular expressions needed for our analysis.
 
 Broadly speaking, there are three "types" of regular expressions: language-specific regex (e.g., identifying Java variables), SQL regex (e.g., for identifying SQL keywords such as SELECT), and 
 dynamically generated language-specific regex combines the two other categories to create complex regex that identify concatenation.
